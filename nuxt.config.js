@@ -27,6 +27,13 @@ module.exports = {
   */
   loading: { color: '#3B8070' },
   /*
+  ** Customize manifest.json
+  */
+  manifest: {
+    name: 'Nuxt.js',
+    theme_color: '#3B8070'
+  },
+  /*
   ** Build configuration
   */
   build: {
