@@ -1,0 +1,32 @@
+{
+  "name": "wp-vue-ssr",
+  "version": "1.0.0",
+  "description": "A vue.js server side rendered app that connects to Wordpress",
+  "author": "Sean Hise",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.16.2",
+    "@nuxtjs/manifest": "latest",
+    "@nuxtjs/offline": "latest",
+    "@nuxtjs/optimize": "latest",
+    "nuxt": "latest",
+    "nuxt-modules": "latest"
+  },
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.1.1",
+    "eslint": "^3.15.0",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-loader": "^1.6.1",
+    "eslint-plugin-html": "^2.0.0",
+    "eslint-plugin-promise": "^3.4.1",
+    "eslint-plugin-standard": "^2.0.1"
+  }
+}

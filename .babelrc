@@ -1,0 +1,3 @@
+{
+  "plugins": ["transform-object-rest-spread", "stage-2"]
+}
