@@ -3,7 +3,7 @@
     <h3>
       Recent Posts
     </h3>
-    <ul id="example-1">
+    <ul>
       <li v-for="item in posts">
         <nuxt-link :to="slugToUrl(item.slug)">{{ item.title }}</nuxt-link>
       </li>

@@ -10,7 +10,9 @@ module.exports = {
   plugins: ["html"],
   // add your custom rules here
   rules: {
-    "space-before-function-paren": 0
+    "space-before-function-paren": 0,
+    semi: 0,
+    quotes: 0
   },
   globals: {}
 };

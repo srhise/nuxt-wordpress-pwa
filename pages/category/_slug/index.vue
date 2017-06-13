@@ -17,8 +17,8 @@
 <script>
 import { mapGetters } from 'vuex'
 import axios from 'axios'
-import recentPosts from '../../components/recentPosts.vue'
-import categories from '../../components/categories.vue'
+import recentPosts from '../../../components/recentPosts.vue'
+import categories from '../../../components/categories.vue'
 
 export default {
   components: { recentPosts, categories },
