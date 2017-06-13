@@ -6,9 +6,7 @@
   "private": true,
   "dependencies": {
     "axios": "^0.16.2",
-    "@nuxtjs/manifest": "latest",
-    "@nuxtjs/offline": "latest",
-    "@nuxtjs/optimize": "latest",
+    "@nuxtjs/pwa": "latest",
     "nuxt": "latest",
     "nuxt-modules": "latest"
   },
