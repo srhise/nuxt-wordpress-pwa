@@ -72,16 +72,31 @@ export default {
   margin: 0px auto;
   line-height: 150%;
   padding: 30px;
+  max-width: 1000px;
+  margin: 0px auto;
 }
 
 .content {
   flex: 1;
 }
 
+.content img {
+  max-width: 100%;
+  height: auto;
+  margin: 10px 0px;
+}
+
+
 .sidebar {
   width: 180px;
   padding: 0px 20px;
 }
+
+
+
+
+
+
 
 
 
