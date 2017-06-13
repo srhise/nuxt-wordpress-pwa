@@ -9,3 +9,6 @@ npm-debug.log
 
 # Nuxt generate
 dist
+
+# crap
+.DS_Store
