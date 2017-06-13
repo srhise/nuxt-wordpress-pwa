@@ -3,6 +3,9 @@
 
 > A vue.js server side rendered app that connects to Wordpress
 
+<img width="1133" alt="screen shot 2017-06-13 at 7 09 23 pm" src="https://user-images.githubusercontent.com/914113/27108601-2a184758-506c-11e7-9b3a-828c2eb95dd9.png">
+
+
 # Example Deployment
 https://wp-vue-ssr-ecosykhleo.now.sh 
 
