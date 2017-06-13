@@ -1,6 +1,13 @@
+
 # wp-vue-ssr
 
 > A vue.js server side rendered app that connects to Wordpress
+
+# Example Deployment
+https://wp-vue-ssr-ecosykhleo.now.sh 
+
+# Note on Deployment
+Currently hits a WordPress site on a Laravel Forge server, working on moving to environment variable. Working on Readme and instructions on how to setup WP properly, but it works 100% out of the box besides need to setup CORS support. Uses the WP v2 APIs. See /api folder for more.
 
 ## Build Setup
 
