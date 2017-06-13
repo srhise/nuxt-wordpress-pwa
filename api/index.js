@@ -83,6 +83,7 @@ export default {
               id: item.id,
               title: item.title.rendered,
               content: item.content.rendered,
+              excerpt: item.excerpt.rendered,
               slug: item.slug
             }))
           };
@@ -105,7 +106,7 @@ export default {
         .get(`categories?slug=${slug}`)
         .then(response => {
           const data = [...response.data][0];
-          if (response.status === 200 && response.data.length > 0) {
+          if (response.status === 200) {
             return {
               id: data.id,
               name: data.name,
@@ -118,11 +119,12 @@ export default {
             .get(`posts?categories=${category.id}`)
             .then(response => {
               const data = [...response.data];
-              if (response.status === 200 && response.data.length > 0) {
+              if (response.status === 200) {
                 category.posts = data.map(item => ({
                   id: item.id,
                   title: item.title.rendered,
                   content: item.content.rendered,
+                  excerpt: item.excerpt.rendered,
                   slug: item.slug
                 }));
                 resolve(category);

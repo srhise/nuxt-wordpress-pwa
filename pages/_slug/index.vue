@@ -3,9 +3,10 @@
     <section class="header">
       <categories :categories="categories"></categories>
     </section>
-    <section class="container">
-      <div class="content">
-        <h1>{{ post.title.rendered }}</h1>
+    <section><h1 class="page-title">{{ post.title.rendered }}</h1></section>
+    <section class="post-container">
+      <div class="post-content">
+        <h3>{{post.title.rendered}}</h3>
         <div v-html="post.content.rendered"></div>
       </div>
       <div class="sidebar">
@@ -71,7 +72,7 @@ export default {
 <style>
 /* layout */
 
-.container {
+.post-container {
   font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   display: flex;
   justify-content: center;
@@ -84,11 +85,11 @@ export default {
   margin: 0px auto;
 }
 
-.content {
+.post-content {
   flex: 1;
 }
 
-.content img {
+.post-content img {
   max-width: 100%;
   height: auto;
   margin: 10px 0px;
@@ -99,35 +100,9 @@ export default {
   padding: 0px 20px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* end layout */
 
 .title {
-
   display: block;
   font-weight: 300;
   font-size: 36px;
@@ -150,5 +125,41 @@ export default {
 
 p {
   margin-bottom: 10px;
+}
+
+.post {
+  margin-bottom:20px;
+}
+h3 {
+  font-size:54px;
+  font-weight:bold;
+  line-height: 64px;
+}
+h3 a {
+  text-decoration: none;
+  color:#444;
+}
+p {
+  font-size:24px;
+  line-height: 150%;
+}
+.link-more {
+    display:none;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+  
+  .title {
+    font-size: 22px;
+    line-height:44px;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
 }
 </style>
