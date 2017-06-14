@@ -102,22 +102,6 @@ export default {
 
 /* end layout */
 
-.title {
-  display: block;
-  font-weight: 300;
-  font-size: 36px;
-  color: #35495e;
-  letter-spacing: 1px;
-  margin-bottom: 10px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
 
 .links {
   padding-top: 15px;

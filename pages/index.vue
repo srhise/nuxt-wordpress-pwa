@@ -2,15 +2,15 @@
   <div>
     <section class="header">
       <categories :categories="categories"></categories>
-    </section>
-    <section class="container">
-      <div>
-        <h1 class="title">
-          NUXT + VUE + WORDPRESS
+      <h1 class="title">
+          NuxtWP
         </h1>
         <h2 class="subtitle">
           Next Generation WordPress as a Progressive Web App
         </h2>
+    </section>
+    <section class="container">
+      <div>
         <div class="content">
           <post-list v-if="posts" :posts="posts" title="Recent Posts"></post-list>
         </div>
@@ -67,6 +67,10 @@ export default {
 </script>
 
 <style>
+
+.header {
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #1e5799), color-stop(100, #7db9e8));
+}
 .container {
   display: flex;
   justify-content: center;
@@ -91,19 +95,23 @@ export default {
   font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   /* 1 */
   display: block;
-  font-weight: 300;
+  font-weight: bold;
   font-size: 100px;
-  color: #35495e;
+  color: #fff;
   letter-spacing: 1px;
   font-size: 52px;
+  padding:50px 5px 0px 5px;
+  text-align:center;
 }
 
 .subtitle {
   font-weight: 300;
-  font-size: 42px;
-  color: #526488;
+  font-size: 32px;
+  color: #fff;
   word-spacing: 5px;
   padding-bottom: 15px;
+  padding-left:5px;
+  text-align:center;
 }
 
 .links {
@@ -116,16 +124,14 @@ and (min-device-width : 320px)
 and (max-device-width : 480px) {
 
   .title {
-    font-size: 30px;
-    line-height:44px;
-    padding:0px 10px;
-    max-width:90%;
+    font-size: 26px;
+    line-height:36px;
+    padding:40px 10px 0px;
   }
   .subtitle {
     font-size: 22px;
     line-height:26px;
-    padding:0px 10px;
-    max-width:90%;
+    padding:5px 10px 15px;
   }
   h3 {
     font-size: 34px;

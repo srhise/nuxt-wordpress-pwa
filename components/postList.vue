@@ -3,6 +3,7 @@
     <div class="post" v-for="item in posts">
         <h3><nuxt-link :to="slugToUrl(item.slug)">{{ item.title }}</nuxt-link></h3>
         <div v-html="item.excerpt"></div>
+        <strong class="more"><nuxt-link :to="slugToUrl(item.slug)">read more</nuxt-link></strong>
     </div>
   </div>
 </template>
@@ -38,6 +39,11 @@ p {
 }
 .link-more {
     display:none;
+}
+
+.more a {
+  font-size:22px;
+  color:#1e5799;
 }
 
 </style>

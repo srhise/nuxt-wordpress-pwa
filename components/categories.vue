@@ -23,7 +23,6 @@ export default {
 .categories-menu {
     position:fixed;
     width:100%;
-    background-color:#444;
     color:#fff;
     display: flex;
     justify-content:space-around;

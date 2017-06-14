@@ -72,9 +72,10 @@ export default {
 .page-title {
     text-align: center;
     font-size:36px;
-    background-color:#444;
-    padding-top: 50px;
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #1e5799), color-stop(100, #7db9e8));
+    padding-top: 80px;
     color:#fff;
+    padding-bottom:10px;
 }
 
 .category-container {
