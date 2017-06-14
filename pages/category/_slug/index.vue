@@ -2,8 +2,8 @@
   <div>
     <section class="header">
       <categories :categories="categories"></categories>
+      <h1 class="page-title">{{slug}}</h1>
     </section>
-    <section><h1 class="page-title">{{slug}}</h1></section>
     <section class="category-container">
       <div class="category-content">
         <post-list v-if="posts" :posts="category_posts" :title="slug"></post-list>

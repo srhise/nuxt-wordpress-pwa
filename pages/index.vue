@@ -4,10 +4,10 @@
       <categories :categories="categories"></categories>
       <h1 class="title">
           NuxtWP
-        </h1>
-        <h2 class="subtitle">
-          Next Generation WordPress as a Progressive Web App
-        </h2>
+      </h1>
+      <h2 class="subtitle">
+        Next Generation WordPress as a Progressive Web App
+      </h2>
     </section>
     <section class="container">
       <div>

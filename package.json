@@ -5,13 +5,13 @@
   "author": "Sean Hise",
   "private": true,
   "dependencies": {
-    "axios": "^0.16.2",
     "@nuxtjs/pwa": "latest",
-    "nuxt": "latest",
-    "nuxt-modules": "latest",
+    "axios": "^0.16.2",
     "bulma": "^0.4.0",
     "hover.css": "^2.2.0",
     "node-sass": "^4.5.1",
+    "nuxt": "latest",
+    "nuxt-modules": "latest",
     "sass-loader": "^6.0.3"
   },
   "scripts": {

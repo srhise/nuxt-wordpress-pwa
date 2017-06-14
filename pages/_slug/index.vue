@@ -2,8 +2,8 @@
   <div>
     <section class="header">
       <categories :categories="categories"></categories>
+      <h1 class="page-title">{{ post.title.rendered }}</h1>
     </section>
-    <section><h1 class="page-title">{{ post.title.rendered }}</h1></section>
     <section class="post-container">
       <div class="post-content">
         <h3>{{post.title.rendered}}</h3>
@@ -71,6 +71,33 @@ export default {
 
 <style>
 /* layout */
+
+.header {
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #1e5799), color-stop(100, #7db9e8));
+}
+
+.page-title {
+  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  /* 1 */
+  display: block;
+  font-weight: bold;
+  font-size: 100px;
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 52px;
+  padding:50px 5px 0px 5px;
+  text-align:center;
+}
+
+.subtitle {
+  font-weight: 300;
+  font-size: 32px;
+  color: #fff;
+  word-spacing: 5px;
+  padding-bottom: 15px;
+  padding-left:5px;
+  text-align:center;
+}
 
 .post-container {
   font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
