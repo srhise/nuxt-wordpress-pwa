@@ -72,7 +72,9 @@ export default {
 .page-title {
     text-align: center;
     font-size:36px;
-    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #1e5799), color-stop(100, #7db9e8));
+    background-color:#1e5799;
+    background-image: linear-gradient(to right, #34495F, #3A5674);
+    text-align: center;
     padding-top: 80px;
     color:#fff;
     padding-bottom:10px;

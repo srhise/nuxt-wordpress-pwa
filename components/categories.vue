@@ -24,7 +24,6 @@ export default {
 
 <style lang="scss" scoped>
 .categories-menu {
-    position:fixed;
     width:100%;
     color:#fff;
     display: flex;

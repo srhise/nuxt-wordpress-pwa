@@ -2,11 +2,10 @@
   <div>
     <section class="header">
       <categories :categories="categories"></categories>
-      <h1 class="title">
-          NuxtWP
-      </h1>
+      <img class="logo" src="~assets/logo.svg">
+
       <h2 class="subtitle">
-        Next Generation WordPress as a Progressive Web App
+        WordPress as a Progressive Web App
       </h2>
     </section>
     <section class="container">
@@ -70,7 +69,8 @@ export default {
 
 .header {
   background-color:#1e5799;
-  background-image: linear-gradient(to right, #1e5799, #7db9e8);
+  background-image: linear-gradient(to right, #34495F, #3A5674);
+  text-align: center;
 }
 .container {
   display: flex;
@@ -107,9 +107,8 @@ export default {
 
 .subtitle {
   font-weight: 300;
-  font-size: 32px;
+  font-size: 28px;
   color: #fff;
-  word-spacing: 5px;
   padding-bottom: 15px;
   padding-left:5px;
   text-align:center;
