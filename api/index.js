@@ -25,7 +25,6 @@ export default {
             slug: data.slug,
             title: data.title.rendered
           };
-          console.log(filtered);
           resolve(filtered);
         } else {
           reject(response);
@@ -42,7 +41,6 @@ export default {
     return new Promise((resolve, reject) => {
       request.defaults.baseURL = this.baseUrl;
       request.get(`posts?slug=${slug}`).then(response => {
-        console.log(response);
         const data = [...response.data][0];
         if (response.status === 200 && response.data.length > 0) {
           const filtered = {
