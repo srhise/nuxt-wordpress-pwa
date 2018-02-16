@@ -18,6 +18,7 @@
 <script>
 import { mapGetters } from 'vuex'
 import axios from 'axios'
+import config from "../../api/config";
 import recentPosts from '../../components/recentPosts.vue'
 import categories from '../../components/categories.vue'
 
@@ -25,7 +26,7 @@ export default {
   components: { recentPosts, categories },
   async asyncData({ params }) {
     // We can use async/await ES6 feature
-    let { data } = await axios.get(`https://nuxt.craftedup.com/wp-json/wp/v2/posts?slug=${params.slug}`)
+    let { data } = await axios.get(config.baseUrl + `posts?slug=${params.slug}`)
     return {
       post: data[0]
     }
