@@ -1,7 +1,9 @@
 import request from "axios";
+import config from "../api/config";
 
 export default {
-  baseUrl: "https://nuxt.craftedup.com/wp-json/wp/v2/",
+  baseUrl: config.baseUrl,
+
   /**
    * Return a single page
    * @param  string slug Page slug (e.g. 'sample-page')
